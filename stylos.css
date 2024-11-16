@@ -92,7 +92,7 @@ swiper-slide .texto h2, p{
 }
 
 .cartilla .menus{
-    gap: 20px 0px;
+    gap: 20px 5px;
     padding: 10px 10px;
     display: grid;
     place-items: center;
