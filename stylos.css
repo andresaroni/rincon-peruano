@@ -94,7 +94,7 @@ swiper-slide .texto h2, p{
 .cartilla .menus{
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(auto-fill,minmax(440px, 1fr));
+    grid-template-columns: repeat(auto-fill,minmax(500px, 1fr));
     gap: 15px 0px;
     padding: 10px 10px;
 }
