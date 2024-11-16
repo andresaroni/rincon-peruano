@@ -96,7 +96,7 @@ swiper-slide .texto h2, p{
     padding: 10px 10px;
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill,minmax(420px, 1fr));
 }
 
 .cartilla .menus h4, .menus p, .precio{
@@ -122,7 +122,6 @@ swiper-slide .texto h2, p{
 
 .cartilla .contenedor{
     width: 420px;
-    min-width: 320px;
     padding: 10px;
     display: grid;
     place-items: center;
