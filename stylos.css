@@ -139,10 +139,32 @@ swiper-slide .texto h2, p{
 
 .mapa{
     padding: 10px;
+    
 }
 
 .mapa iframe{
     width: 100%;
+}
+
+.border{
+    border-bottom: 1px solid #ffffff;
+    margin: 40px;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div p{
+    font-size: 15px;
+    color: #d1d1d1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer div .contacto{
+    display: grid;
+    place-items: center;
 }
 
 @media (width < 625px) {
