@@ -52,7 +52,7 @@ header .titulo h3{
 }
 
 header .btn-ordenar{
-    background-color: black;
+    background-color: #e00303e7;
     width: 220px;
     height: 50px;
     display: flex;
@@ -63,8 +63,9 @@ header .btn-ordenar{
 
 header .btn-ordenar:hover{
     cursor: pointer;
-    background-color: #f00202;
-    transition: 0.3s;
+    background-color: rgb(255, 0, 0);
+    transition: 0.3s all;
+    transition-delay: 0.10;
 }
 
 header .btn-ordenar p{
@@ -138,19 +139,27 @@ swiper-slide .texto h2, p{
 
 .cartilla{
     display: grid;
+    background-color: white;
 }
 
 .cartilla h2{
     padding: 15px;
     text-align: center;
+    color: var(--texto-oscuro);
+    font-size: 45px;
+    font-family: "Courgette";
+    filter: drop-shadow(
+        0 0 20px rgb(172, 119, 119)
+    );
+
 }
 
 .cartilla .menus{
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(auto-fill,minmax(420px, 1fr));
-    gap: 20px 0px;
-    padding: 10px 10px;
+    grid-template-columns: repeat(auto-fill,minmax(440px, 1fr));
+    gap: 30px 0px;
+    padding: 20px 20px;
 }
 
 .cartilla .menus h4, .menus p, .precio{
@@ -160,13 +169,17 @@ swiper-slide .texto h2, p{
 
 .cartilla .contenedor{
     width: 460px;
-    height: 230px;
+    max-width: 500px;
+    height: 250px;
     padding: 10px;
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr;
-    background-color: #141414;
-    border-radius: 15px;
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: 8px 6px 15px rgba(62, 62, 62, 0.687),
+                -10px -8px 20px rgb(114, 114, 114);
+    border: 1px solid rgba(252, 247, 247, 0.804);
 }
 
 .cartilla .menus .contenedor .texto{
@@ -175,7 +188,8 @@ swiper-slide .texto h2, p{
 }
 
 .cartilla .menus .contenedor .texto h4{
-    font-size: 20px;
+    font-size: 25px;
+    font-family: "Courgette";
 }
 
 .cartilla .menus .contenedor .texto p{
@@ -186,8 +200,8 @@ swiper-slide .texto h2, p{
 }
 
 .cartilla .menus .contenedor .texto .precio{
-    width: 85px;
-    height: 25px;
+    width: 95px;
+    height: 30px;
     color: var(--texto-claro);
     background-color: #f00202;
     border: 1px solid white;
@@ -195,16 +209,20 @@ swiper-slide .texto h2, p{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
 }
 
 .cartilla .contenedor .imagen img{
     width: 100%;
     object-fit: cover;
+    filter: drop-shadow(
+        0 0 8px rgba(255, 255, 255, 0.888)
+    );
 }
 
 .mapa{
-    padding: 10px;
-    
+    padding-top: 25px;
+    background-color: white;
 }
 
 .mapa iframe{
@@ -245,6 +263,10 @@ footer div .contacto{
 
     header .btn-ordenar p{
         font-size: 15px;
+    }
+
+    .cartilla h2{
+        font-size: 40px;
     }
 }
 
@@ -305,7 +327,7 @@ footer div .contacto{
 
 }
 
-@media (width < 425px){
+@media (width < 445px){
 
     header .logo{
         width: 40px;
@@ -321,6 +343,14 @@ footer div .contacto{
 
     header .btn-ordenar p{
         font-size: 8px;
+    }
+
+    .cartilla h2{
+        font-size: 30px;
+    }
+
+    .cartilla .menus{
+        grid-template-columns: repeat(auto-fill,minmax(220px, 1fr));
     }
 
 }
