@@ -53,8 +53,8 @@ header .titulo h3{
 
 header .btn-ordenar{
     background-color: #e00303e7;
-    width: 220px;
-    height: 50px;
+    width: 180px;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,16 +62,19 @@ header .btn-ordenar{
 }
 
 header .btn-ordenar:hover{
+    width: 200px;
+    height: 50px;
     cursor: pointer;
     background-color: rgb(255, 0, 0);
+    color: black;
     transition: 0.3s all;
     transition-delay: 0.10;
 }
 
-header .btn-ordenar p{
+header .btn-ordenar h4{
     text-align: center;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 swiper-container {
@@ -137,29 +140,36 @@ swiper-slide .texto h2, p{
     color: var(--texto-claro);
 }
 
-.cartilla{
-    display: grid;
+.comidas{
     background-color: white;
+    padding: 60px;
+}
+
+.cartilla{
+    width: 100%;
+    display: grid;
+    background-color: #e5e7eb;
+    border-radius: 20px;
+    padding-bottom: 40px;
+    padding: 0 20px 0 20px;
 }
 
 .cartilla h2{
-    padding: 15px;
-    text-align: center;
+    padding: 45px 0 15px 120px;
+    text-align: start;
     color: var(--texto-oscuro);
-    font-size: 45px;
+    font-size: 40px;
     font-family: "Courgette";
     filter: drop-shadow(
         0 0 20px rgb(172, 119, 119)
     );
-
 }
 
 .cartilla .menus{
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(auto-fill,minmax(440px, 1fr));
-    gap: 30px 0px;
-    padding: 20px 20px;
+    grid-template-columns: repeat(auto-fill,minmax(430px, 1fr));
+    gap: 40px 0px;
 }
 
 .cartilla .menus h4, .menus p, .precio{
@@ -168,15 +178,13 @@ swiper-slide .texto h2, p{
 }
 
 .cartilla .contenedor{
-    width: 460px;
-    max-width: 500px;
-    height: 250px;
+    width: 430px;
+    height: 230px;
     padding: 10px;
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr;
     background-color: black;
-    border-radius: 20px;
     box-shadow: 8px 6px 15px rgba(62, 62, 62, 0.687),
                 -10px -8px 20px rgb(114, 114, 114);
     border: 1px solid rgba(252, 247, 247, 0.804);
@@ -188,14 +196,14 @@ swiper-slide .texto h2, p{
 }
 
 .cartilla .menus .contenedor .texto h4{
-    font-size: 25px;
+    font-size: 22px;
     font-family: "Courgette";
 }
 
 .cartilla .menus .contenedor .texto p{
     color: #D9D9D9;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -216,12 +224,11 @@ swiper-slide .texto h2, p{
     width: 100%;
     object-fit: cover;
     filter: drop-shadow(
-        0 0 8px rgba(255, 255, 255, 0.888)
+        0 0 6px rgba(255, 255, 255, 0.888)
     );
 }
 
 .mapa{
-    padding-top: 25px;
     background-color: white;
 }
 
@@ -250,6 +257,39 @@ footer div .contacto{
     place-items: center;
 }
 
+@media (width < 1020px){
+
+    .cartilla h2{
+        padding: 15px 0 15px 0px;
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .cartilla .menus{
+        grid-template-columns: repeat(auto-fill,minmax(500px, 1fr));
+    }
+
+    .cartilla .menus .contenedor{
+        width: 530px;
+        height: 220px;
+    }
+
+    .cartilla .menus .contenedor .texto h4{
+        font-size: 25px;
+    }
+
+    .cartilla .menus .contenedor .texto p{
+        font-size: 12px;
+    }
+
+    .cartilla .menus .contenedor .texto .precio{
+        font-size: 18px;
+        width: 80px;
+        height: 25px;
+    }
+
+}
+
 @media (width < 750px){
 
     header .titulo h3{
@@ -258,19 +298,26 @@ footer div .contacto{
 
     header .btn-ordenar{
         width: 150px;
-        height: 50px;
+        height: 40px;
     }
 
-    header .btn-ordenar p{
-        font-size: 15px;
+    header .btn-ordenar:hover{
+        width: 170px;
+        height: 45px;
+    }
+
+    header .btn-ordenar h4{
+        font-size: 25px;
     }
 
     .cartilla h2{
-        font-size: 40px;
+        font-size: 30px;
+        text-align: center;
+        padding: 15px 0 15px 0px;
     }
 }
 
-@media (width < 625px) {
+@media (width < 685px) {
 
     header .logo{
         width: 60px;
@@ -281,12 +328,17 @@ footer div .contacto{
     }
 
     header .btn-ordenar{
-        width: 80px;
-        height: 30px;
+        width: 100px;
+        height: 35px;
     }
 
-    header .btn-ordenar p{
-        font-size: 10px;
+    header .btn-ordenar:hover{
+        width: 120px;
+        height: 40px;
+    }
+
+    header .btn-ordenar h4{
+        font-size: 14px;
     }
 
     swiper-slide{
@@ -302,11 +354,14 @@ footer div .contacto{
         font-size: 12px;
     }
 
-    .cartilla .contenedor{
-        width: 320px;
-        height: 180px;
+    .cartilla .menus{
+        grid-template-columns: repeat(auto-fill,minmax(350px, 1fr));
     }
 
+    .cartilla .menus .contenedor{
+        width: 330px;
+        height: 180px;
+    }
     .cartilla .menus .contenedor .texto .precio{
         font-size: 13px;
         width: 62px;
@@ -314,7 +369,7 @@ footer div .contacto{
     }
 
     .cartilla .menus .contenedor .texto h4{
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .cartilla .menus .contenedor .texto p{
@@ -327,7 +382,7 @@ footer div .contacto{
 
 }
 
-@media (width < 445px){
+@media (width < 485px){
 
     header .logo{
         width: 40px;
@@ -338,11 +393,26 @@ footer div .contacto{
     }
 
     header .btn-ordenar{
-        width: 50px;
+        width: 75px;
+        height: 25px;
     }
 
-    header .btn-ordenar p{
-        font-size: 8px;
+    header .btn-ordenar:hover{
+        width: 95px;
+        height: 30px;
+    }
+
+    header .btn-ordenar h4{
+        font-size: 10px;
+    }
+
+    .comidas{
+        padding: 30px;
+        min-width: 420px;
+    }
+
+    .comidas .cartilla{
+        min-width: 320px;
     }
 
     .cartilla h2{
@@ -350,7 +420,20 @@ footer div .contacto{
     }
 
     .cartilla .menus{
-        grid-template-columns: repeat(auto-fill,minmax(220px, 1fr));
+        grid-template-columns: repeat(auto-fill,minmax(270px, 1fr));
+    }
+
+    .cartilla .menus .contenedor{
+        width: 270px;
+        height: 170px;
+    }
+
+    .cartilla .menus .contenedor .texto h4{
+        font-size: 13px;
+    }
+
+    .cartilla .menus .contenedor .texto p{
+        font-size: 9px;
     }
 
 }
