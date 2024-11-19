@@ -151,7 +151,6 @@ swiper-slide .texto h2, p{
     background-color: #e5e7eb;
     border-radius: 20px;
     padding-bottom: 40px;
-    padding: 0 20px 0 20px;
 }
 
 .cartilla h2{
@@ -178,7 +177,7 @@ swiper-slide .texto h2, p{
 }
 
 .cartilla .contenedor{
-    width: 430px;
+    width: 440px;
     height: 230px;
     padding: 10px;
     display: grid;
@@ -270,7 +269,7 @@ footer div .contacto{
     }
 
     .cartilla .menus .contenedor{
-        width: 530px;
+        width: 550px;
         height: 220px;
     }
 
@@ -359,7 +358,7 @@ footer div .contacto{
     }
 
     .cartilla .menus .contenedor{
-        width: 330px;
+        width: 350px;
         height: 180px;
     }
     .cartilla .menus .contenedor .texto .precio{
@@ -412,7 +411,7 @@ footer div .contacto{
     }
 
     .comidas .cartilla{
-        min-width: 320px;
+        min-width: 340px;
     }
 
     .cartilla h2{
@@ -424,7 +423,7 @@ footer div .contacto{
     }
 
     .cartilla .menus .contenedor{
-        width: 270px;
+        width: 290px;
         height: 170px;
     }
 
